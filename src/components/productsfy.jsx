@@ -34,19 +34,19 @@ const PriceText = styled.h2`
 //ye reuse kar lenge for title and MRP price cut text (and also for discount percentage)
 const Text = styled.h2`
   color: ${(props) => {
-    if (props.discountper) return "#038D63";
-    else if (props.firstdisc) return "#666";
+    if (props.$discountper) return "#038D63";
+    else if (props.$firstdisc) return "#666";
     else return "#999";
   }};
   font-size: 16px;
   font-style: normal;
-  font-weight: ${(props) => (props.bold ? 600 : 400)};
+  font-weight: ${(props) => (props.$bold ? 600 : 400)};
   line-height: 20px;
   letter-spacing: 0.04px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  text-decoration: ${(props) => (props.strike ? "line-through" : "none")};
+  text-decoration: ${(props) => (props.$strike ? "line-through" : "none")};
 `;
 const FlexRow = styled.div`
   display: flex;
@@ -56,7 +56,7 @@ const FlexRow = styled.div`
 `;
 const FlexRowSub = styled.div`
   display: flex;
-  gap: ${(props) => (props.lessgap ? "4px" : "8px")};
+  gap: ${(props) => (props.$lessgap ? "4px" : "8px")};
   align-items: center;
 `;
 const Tag = styled.p`
@@ -184,15 +184,15 @@ export default function ProductsFy() {
                 <Text>{item.title}</Text>
                 <FlexRowSub>
                   <PriceText>₹{item.currentPrice}</PriceText>
-                  <Text strike>₹{item.priceBeforeDisc}</Text>
-                  <Text bold discountper>
+                  <Text $strike>₹{item.priceBeforeDisc}</Text>
+                  <Text $bold $discountper>
                     {item.discPercentage}% off
                   </Text>
                 </FlexRowSub>
                 {item.isFirstOrder && (
-                  <FlexRowSub lessgap>
+                  <FlexRowSub $lessgap>
                     <img src="src/assets/productsfy/disc.svg" />
-                    <Text firstdisc>₹100 discount on 1st order</Text>
+                    <Text $firstdisc>₹100 discount on 1st order</Text>
                   </FlexRowSub>
                 )}
                 {item.hasFreeDelivery && <Tag>Free Delivery</Tag>}

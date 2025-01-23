@@ -12,14 +12,14 @@ const Card = styled.div`
   padding: 32px 35px;
   gap: 28px;
   border-radius: 12px;
-  background: ${(props) => props.bgColor || "#fde9f2"};
+  background: ${(props) => props.$bgColor || "#fde9f2"};
   align-items: center;
   justify-content: center;
   flex: 1;
 `;
 const SubText = styled.h2`
   /* color: #f43397; */
-  color: ${(props) => props.textColor || "#f43397"};
+  color: ${(props) => props.$textColor || "#f43397"};
   text-align: center;
   font-size: 20px;
   font-style: normal;
@@ -70,9 +70,9 @@ export default function Toppicks() {
         </Card> */}
         {topPicksList.map((item, ind) => {
           return (
-            <Card key={ind} bgColor={item.bgColor}>
+            <Card key={ind} $bgColor={item.bgColor}>
               <img src={item.imgUrl} />
-              <SubText textColor={item.textColor}>{item.title}</SubText>
+              <SubText $textColor={item.textColor}>{item.title}</SubText>
             </Card>
           );
         })}
