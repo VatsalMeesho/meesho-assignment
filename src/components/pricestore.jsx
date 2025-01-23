@@ -4,8 +4,7 @@ import TitleText from "./title";
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
-  padding-bottom: 76px;
+  padding: 40px 56px 76px;
   gap: 40px;
 `;
 const Card = styled.div`

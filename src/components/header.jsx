@@ -35,6 +35,7 @@ const SearchInput = styled.input`
 const HeaderDiv = styled.div`
   display: flex;
   gap: 36px;
+  padding-left: 56px;
 `;
 export default function Header() {
   const [searchQuery, setSearchQuery] = useState("");

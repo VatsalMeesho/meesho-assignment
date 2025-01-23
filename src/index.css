@@ -16,3 +16,9 @@
     "Helvetica Neue",
     sans-serif;
 }
+.arrow-next {
+  /* border: 1px solid red; */
+  position: absolute;
+  right: -16px;
+  top: 110px;
+}

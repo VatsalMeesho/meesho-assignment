@@ -25,7 +25,7 @@ const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 40px 0px 60px 0px;
+  padding: 40px 56px 60px 56px;
   /* border: 1px solid red; */
 `;
 

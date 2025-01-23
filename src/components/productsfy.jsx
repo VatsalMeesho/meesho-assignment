@@ -3,7 +3,7 @@ import TitleText from "./title";
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 40px 0;
+  padding: 40px 56px;
   gap: 28px;
 `;
 

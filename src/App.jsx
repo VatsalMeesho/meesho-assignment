@@ -7,12 +7,13 @@ import BestSellers from "./components/bestsellers";
 import Toppicks from "./components/toppicks";
 import ProductsFy from "./components/productsfy";
 import PriceStore from "./components/pricestore";
+import Footer from "./components/footer";
 const RootDiv = styled.div`
   max-width: 1440px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding-left: 56px;
+  /* padding-left: 56px; */
   /* border: 1px solid grey; */
 `;
 const Divider = styled.div`
@@ -48,6 +49,7 @@ function App() {
       <Toppicks />
       <Divider />
       <ProductsFy />
+      <Footer />
     </RootDiv>
   );
 }

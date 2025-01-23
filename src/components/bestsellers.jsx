@@ -11,16 +11,19 @@ const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding-top: 40px;
-  padding-bottom: 76px;
+  /* padding-top: 40px;
+  padding-bottom: 76px; */
+  padding: 40px 56px 76px;
 `;
 
 const FlexRow = styled.div`
   display: flex;
+  position: relative;
   flex-direction: row;
   gap: 16px;
   justify-content: space-between;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
+  border: 1px solid red;
 `;
 const ItemTitle = styled.p`
   color: #999;
@@ -38,6 +41,7 @@ const ItemPrice = styled.p`
   font-weight: 600;
   line-height: 20px; /* 125% */
 `;
+
 const bestsellerList = [
   {
     title: "Kurtis",
@@ -97,20 +101,13 @@ export default function BestSellers() {
         {viewList.map((item, ind) => {
           return (
             <Card key={ind}>
-              <img src={item.imgUrl} width="200px" height="240px" />
+              <img src={item.imgUrl} width="200px" height="240px"></img>
               <ItemTitle>{item.title}</ItemTitle>
               <ItemPrice>From ${item.price}</ItemPrice>
             </Card>
           );
         })}
       </FlexRow>
-      {/* <button
-        onClick={() => {
-          setViewList(bestsellerList.slice(6, 1));
-        }}
-      >
-        click
-      </button> */}
     </FlexContainer>
   );
 }
