@@ -12,7 +12,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 `;
 const CardText = styled.div`
   width: 100%;
@@ -21,8 +21,9 @@ const CardText = styled.div`
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 133.333% */
+  line-height: 24px;
   letter-spacing: 0.018px;
+  /* border: 1px solid; */
 `;
 
 const FlexRow = styled.div`
@@ -56,62 +57,16 @@ export default function PriceStore() {
     <FlexContainer>
       <TitleText>Price Store</TitleText>
       <FlexRow>
-        <Card>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="208"
-              height="208"
-              viewBox="0 0 208 208"
-              fill="none"
-            >
-              <rect width="208" height="208" rx="104" fill="#FFF4D7" />
-            </svg>
-          </div>
-          <CardText>Under $99</CardText>
-        </Card>
-        <Card>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="208"
-              height="208"
-              viewBox="0 0 208 208"
-              fill="none"
-            >
-              <rect width="208" height="208" rx="104" fill="#FFF4D7" />
-            </svg>
-          </div>
-          <CardText>Under $99</CardText>
-        </Card>
-        <Card>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="208"
-              height="208"
-              viewBox="0 0 208 208"
-              fill="none"
-            >
-              <rect width="208" height="208" rx="104" fill="#FFF4D7" />
-            </svg>
-          </div>
-          <CardText>Under $99</CardText>
-        </Card>
-        <Card>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="208"
-              height="208"
-              viewBox="0 0 208 208"
-              fill="none"
-            >
-              <rect width="208" height="208" rx="104" fill="#FFF4D7" />
-            </svg>
-          </div>
-          <CardText>Under $99</CardText>
-        </Card>
+        {priceList.map((item, ind) => {
+          return (
+            <Card key={ind}>
+              <div>
+                <img src={item.imgUrl} />
+              </div>
+              <CardText>{item.title}</CardText>
+            </Card>
+          );
+        })}
       </FlexRow>
     </FlexContainer>
   );

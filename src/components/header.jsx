@@ -41,9 +41,13 @@ export default function Header() {
   return (
     <HeaderContainer>
       <HeaderDiv>
-        <MeeshoLogo src="src/assets/meeshoLogo.svg" />
+        <MeeshoLogo src="src/assets/header/meeshoLogo.svg" />
         <SearchBox>
-          <img src="src/assets/search-icon.svg" width="20px" height="20px" />
+          <img
+            src="src/assets/header/search-icon.svg"
+            width="20px"
+            height="20px"
+          />
           <SearchInput
             placeholder="Try Saree,Kurti or Search by Product Code"
             value={searchQuery}

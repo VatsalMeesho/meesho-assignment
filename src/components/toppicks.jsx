@@ -24,7 +24,7 @@ const SubText = styled.h2`
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
 `;
 const FlexRow = styled.div`
   display: flex;
