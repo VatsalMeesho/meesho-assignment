@@ -30,7 +30,7 @@ const FlexContainer = styled.div`
 `;
 
 const Card = styled.div`
-  background-image: ${({ bgImage }) => `url(${bgImage})`};
+  background-image: ${({ bgimage }) => `url(${bgimage})`};
   width: 320px;
   height: 320px;
   background-size: cover;
@@ -84,13 +84,13 @@ export default function Trending() {
         <TitleText>Trending Now</TitleText>
         <TrendingSubTitle>Best Deals On Products</TrendingSubTitle>
       </TrendingHeader>
-      {/* <Card bgImage="src/assets/trending-img.png">
+      {/* <Card bgimage="src/assets/trending-img.png">
         <CardText>Summer Collection</CardText>
       </Card> */}
       <FlexRow>
         {trendingList.map((trend, ind) => {
           return (
-            <Card bgImage={trend.imgUrl} key={ind}>
+            <Card bgimage={trend.imgUrl} key={ind}>
               <CardText>{trend.title}</CardText>
             </Card>
           );

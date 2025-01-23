@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useState } from "react";
 import TitleText from "./title";
 const Card = styled.div`
   display: flex;
@@ -40,41 +41,60 @@ const ItemPrice = styled.p`
 const bestsellerList = [
   {
     title: "Kurtis",
-    price: 500,
+    price: 0,
     imgUrl: "src/assets/bestseller.png",
   },
   {
     title: "Kurtis",
-    price: 500,
+    price: 1,
     imgUrl: "src/assets/bestseller.png",
   },
   {
     title: "Kurtis",
-    price: 500,
+    price: 2,
     imgUrl: "src/assets/bestseller.png",
   },
   {
     title: "Kurtis",
-    price: 500,
+    price: 3,
     imgUrl: "src/assets/bestseller.png",
   },
   {
     title: "Kurtis",
-    price: 500,
+    price: 4,
     imgUrl: "src/assets/bestseller.png",
   },
   {
     title: "Kurtis",
-    price: 500,
+    price: 5,
+    imgUrl: "src/assets/bestseller.png",
+  },
+  {
+    title: "Kurtis",
+    price: 6,
+    imgUrl: "src/assets/bestseller.png",
+  },
+  {
+    title: "Kurtis",
+    price: 7,
+    imgUrl: "src/assets/bestseller.png",
+  },
+  {
+    title: "Kurtis",
+    price: 8,
     imgUrl: "src/assets/bestseller.png",
   },
 ];
 export default function BestSellers() {
+  const [index, setIndex] = useState(0);
+  const [viewList, setViewList] = useState(() =>
+    bestsellerList.length <= 6 ? bestsellerList : bestsellerList.slice(0, 6),
+  );
   return (
     <FlexContainer>
       <TitleText>Bestsellers</TitleText>
       <FlexRow>
-        {bestsellerList.map((item, ind) => {
+        {viewList.map((item, ind) => {
           return (
             <Card key={ind}>
               <img src={item.imgUrl} width="200px" height="240px" />
@@ -84,6 +104,13 @@ export default function BestSellers() {
           );
         })}
       </FlexRow>
+      {/* <button
+        onClick={() => {
+          setViewList(bestsellerList.slice(6, 1));
+        }}
+      >
+        click
+      </button> */}
     </FlexContainer>
   );
 }
