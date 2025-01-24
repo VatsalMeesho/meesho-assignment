@@ -11,11 +11,17 @@ const NavContainer = styled.div`
   width: 100%;
   justify-content: space-between;
 `;
+const PTag = styled.p`
+  &:hover {
+    border-bottom: 3px solid rgb(159, 32, 137);
+  }
+  transition: border-bottom 0.1s;
+`;
 export default function NavBar() {
   return (
     <NavContainer>
       {navTitles.map((title, index) => (
-        <p key={index}>{title}</p>
+        <PTag key={index}>{title}</PTag>
       ))}
     </NavContainer>
   );
