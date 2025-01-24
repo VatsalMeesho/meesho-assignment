@@ -100,11 +100,11 @@ export default function Header() {
           <Text>Become a Supplier</Text>
         </Supplier>
         <IconContainer>
-          <img src="src/assets/header/profile.svg" width="24px" height="24px" />
+          <img src="src/assets/header/profile.svg" width="21px" height="22px" />
           <Text>Profile</Text>
         </IconContainer>
         <IconContainer>
-          <img src="src/assets/header/cart.svg" width="24px" height="24px" />
+          <img src="src/assets/header/cart.svg" width="22px" height="20px" />
           <Text>Cart</Text>
         </IconContainer>
       </FlexRow>

@@ -96,6 +96,7 @@ const SubText2 = styled.p`
 `;
 const ImgContainer = styled.div`
   position: relative;
+  max-height: 400px;
 `;
 const SmallDivider = styled.div`
   height: 1px;

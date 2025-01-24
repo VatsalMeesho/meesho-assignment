@@ -36,6 +36,10 @@ const FlexCTA = styled.div`
   display: flex;
   gap: 16px;
 `;
+const IconContainer = styled.div`
+  display: flex;
+  gap: 16px;
+`;
 export default function Footer() {
   return (
     <FlexContainer>
@@ -56,9 +60,9 @@ export default function Footer() {
         <Text>Life@Meesho</Text>
       </FlexColumn>
       <FlexColumn>
-        <Text>Careers</Text>
-        <Text>Become a Supplier</Text>
-        <Text>Life@Meesho</Text>
+        <Text>Terms & Conditions</Text>
+        <Text>Support</Text>
+        <Text>Whilstleblower Policy</Text>
       </FlexColumn>
       <FlexColumn>
         <Text $bold>Contact Us</Text>
@@ -66,6 +70,13 @@ export default function Footer() {
       </FlexColumn>
       <FlexColumn>
         <Text $bold>Reach out to us</Text>
+        <IconContainer>
+          <img src="src/assets/footer/fb.png" />
+          <img src="src/assets/footer/insta.png" />
+          <img src="src/assets/footer/yt.png" />
+          <img src="src/assets/footer/linkedin.png" />
+          <img src="src/assets/footer/twitter.png" />
+        </IconContainer>
       </FlexColumn>
     </FlexContainer>
   );
