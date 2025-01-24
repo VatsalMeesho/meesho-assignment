@@ -9,9 +9,3 @@
   box-sizing: border-box;
   font-family: "MierB-Book";
 }
-.arrow-next {
-  /* border: 1px solid red; */
-  position: absolute;
-  right: -16px;
-  top: 110px;
-}

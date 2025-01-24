@@ -29,10 +29,22 @@ const SearchBox = styled.div`
 `;
 const SearchInput = styled.input`
   min-width: 296px;
+  width: 100%;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 500;
-  margin-right: 60px;
+  /* padding-top: 11px; */
   border: none;
+  position: relative;
+  top: 3px;
+  &:focus {
+    background-size:
+      100% 2px,
+      100% 1px;
+    outline: 0 none;
+    transition-duration: 0.3s;
+    color: #525252;
+  }
 `;
 const HeaderDiv = styled.div`
   display: flex;
@@ -84,6 +96,7 @@ export default function Header() {
             width="20px"
             height="20px"
           />
+
           <SearchInput
             placeholder="Try Saree,Kurti or Search by Product Code"
             value={searchQuery}
