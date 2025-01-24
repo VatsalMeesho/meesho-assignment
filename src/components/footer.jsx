@@ -50,8 +50,8 @@ export default function Footer() {
           Cash on Delivery | Free Delivery
         </Text>
         <FlexCTA>
-          <img src="src/assets/footer/playstore.svg" />
-          <img src="src/assets/footer/appstore.svg" />
+          <img src="/assets/footer/playstore.svg" />
+          <img src="/assets/footer/appstore.svg" />
         </FlexCTA>
       </FlexColumn>
       <FlexColumn>
@@ -71,11 +71,11 @@ export default function Footer() {
       <FlexColumn>
         <Text $bold>Reach out to us</Text>
         <IconContainer>
-          <img src="src/assets/footer/fb.png" />
-          <img src="src/assets/footer/insta.png" />
-          <img src="src/assets/footer/yt.png" />
-          <img src="src/assets/footer/linkedin.png" />
-          <img src="src/assets/footer/twitter.png" />
+          <img src="/assets/footer/fb.png" />
+          <img src="/assets/footer/insta.png" />
+          <img src="/assets/footer/yt.png" />
+          <img src="/assets/footer/linkedin.png" />
+          <img src="/assets/footer/twitter.png" />
         </IconContainer>
       </FlexColumn>
     </FlexContainer>

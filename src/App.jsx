@@ -110,7 +110,7 @@ function App() {
       <SmallDivider />
       <NavBar />
       <ImgContainer>
-        <LandingImg src="src/assets/landing-img.png" />
+        <LandingImg src="/assets/landing-img.png" />
         <Title>
           <TitleText>30% off</TitleText>
           <SubText>on your first order</SubText>

@@ -1,7 +1,7 @@
 const productsList = [
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
+    imgUrl: "/assets/productsfy/product-img.png",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",
@@ -13,7 +13,7 @@ const productsList = [
   },
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
+    imgUrl: "/assets/productsfy/product-img.png",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",
@@ -25,7 +25,7 @@ const productsList = [
   },
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
+    imgUrl: "/assets/productsfy/product-img.png",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",
@@ -37,7 +37,7 @@ const productsList = [
   },
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
+    imgUrl: "/assets/productsfy/product-img.png",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",
@@ -49,7 +49,7 @@ const productsList = [
   },
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
+    imgUrl: "/assets/productsfy/product-img.png",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",
@@ -61,7 +61,7 @@ const productsList = [
   },
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
+    imgUrl: "/assets/productsfy/product-img.png",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",
@@ -73,7 +73,7 @@ const productsList = [
   },
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
+    imgUrl: "/assets/productsfy/product-img.png",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",
@@ -85,7 +85,7 @@ const productsList = [
   },
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
+    imgUrl: "/assets/productsfy/product-img.png",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",

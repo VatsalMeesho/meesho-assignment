@@ -96,7 +96,7 @@ export default function ProductsFy() {
                 </FlexRowSub>
                 {item.isFirstOrder && (
                   <FlexRowSub $lessgap>
-                    <img src="src/assets/productsfy/disc.svg" />
+                    <img src="/assets/productsfy/disc.svg" />
                     <Text $firstdisc>₹100 discount on 1st order</Text>
                   </FlexRowSub>
                 )}

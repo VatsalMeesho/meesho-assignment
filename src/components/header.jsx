@@ -89,10 +89,10 @@ export default function Header() {
   return (
     <HeaderContainer>
       <HeaderDiv>
-        <MeeshoLogo src="src/assets/header/meeshoLogo.svg" />
+        <MeeshoLogo src="/assets/header/meeshoLogo.svg" />
         <SearchBox $searchQuery={searchQuery}>
           <img
-            src="src/assets/header/search-icon.svg"
+            src="/assets/header/search-icon.svg"
             width="20px"
             height="20px"
           />
@@ -123,18 +123,18 @@ export default function Header() {
       </HeaderDiv>
       <FlexRow>
         <AppDownload>
-          <img src="src/assets/header/download-app.svg" />
+          <img src="/assets/header/download-app.svg" />
           <Text>Download App</Text>
         </AppDownload>
         <Supplier>
           <Text>Become a Supplier</Text>
         </Supplier>
         <IconContainer>
-          <img src="src/assets/header/profile.svg" width="21px" height="22px" />
+          <img src="/assets/header/profile.svg" width="21px" height="22px" />
           <Text>Profile</Text>
         </IconContainer>
         <IconContainer>
-          <img src="src/assets/header/cart.svg" width="22px" height="20px" />
+          <img src="/assets/header/cart.svg" width="22px" height="20px" />
           <Text>Cart</Text>
         </IconContainer>
       </FlexRow>

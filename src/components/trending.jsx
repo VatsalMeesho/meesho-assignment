@@ -62,7 +62,7 @@ export default function Trending() {
         <TitleText>Trending Now</TitleText>
         <TrendingSubTitle>Best Deals On Products</TrendingSubTitle>
       </TrendingHeader>
-      {/* <Card bgimage="src/assets/trending-img.png">
+      {/* <Card bgimage="/assets/trending-img.png">
         <CardText>Summer Collection</CardText>
       </Card> */}
       <FlexRow>

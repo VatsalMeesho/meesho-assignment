@@ -21,15 +21,15 @@ const Container = styled.div`
 const featureList = [
   {
     title: "Lowest Prices",
-    imgUrl: "src/assets/lowest-prices.svg",
+    imgUrl: "/assets/lowest-prices.svg",
   },
   {
     title: "Cash on Delivery",
-    imgUrl: "src/assets/cod.png",
+    imgUrl: "/assets/cod.png",
   },
   {
     title: "Free Returns",
-    imgUrl: "src/assets/free-returns.svg",
+    imgUrl: "/assets/free-returns.svg",
   },
 ];
 export default function Features() {
@@ -37,15 +37,15 @@ export default function Features() {
     <Container>
       <FeatureContainer>
         {/* <FeatureTag>
-          <img src="src/assets/lowest-prices.svg" width="48px" height="48px" />
+          <img src="/assets/lowest-prices.svg" width="48px" height="48px" />
           <p>Lowest Prices</p>
         </FeatureTag>
         <FeatureTag>
-          <img src="src/assets/lowest-prices.svg" width="48px" height="48px" />
+          <img src="/assets/lowest-prices.svg" width="48px" height="48px" />
           <p>Lowest Prices</p>
         </FeatureTag>
         <FeatureTag>
-          <img src="src/assets/lowest-prices.svg" width="48px" height="48px" />
+          <img src="/assets/lowest-prices.svg" width="48px" height="48px" />
           <p>Lowest Prices</p>
         </FeatureTag> */}
         {featureList.map((feature, ind) => {

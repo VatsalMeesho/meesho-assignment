@@ -34,19 +34,19 @@ const FlexRow = styled.div`
 const topPicksList = [
   {
     title: "Meesho Trusted",
-    imgUrl: "src/assets/toppicks/mtrusted.svg",
+    imgUrl: "/assets/toppicks/mtrusted.svg",
     bgColor: "#fde9f2",
     textColor: "#F43397",
   },
   {
     title: "Best Quality",
-    imgUrl: "src/assets/toppicks/best-quality.svg",
+    imgUrl: "/assets/toppicks/best-quality.svg",
     bgColor: "#E7EEFF",
     textColor: "#5585F8",
   },
   {
     title: "Most Wishlisted",
-    imgUrl: "src/assets/toppicks/most-wishlist.svg",
+    imgUrl: "/assets/toppicks/most-wishlist.svg",
     bgColor: "#FFDAD6",
     textColor: "#FB4B4B;",
   },
@@ -57,15 +57,15 @@ export default function Toppicks() {
       <TitleText>Top Picks</TitleText>
       <FlexRow>
         {/* <Card>
-          <img src="src/assets/toppicks/mtrusted.svg" />
+          <img src="/assets/toppicks/mtrusted.svg" />
           <Text>Meesho Trusted</Text>
         </Card>
         <Card>
-          <img src="src/assets/toppicks/mtrusted.svg" />
+          <img src="/assets/toppicks/mtrusted.svg" />
           <Text>Meesho Trusted</Text>
         </Card>
         <Card>
-          <img src="src/assets/toppicks/mtrusted.svg" />
+          <img src="/assets/toppicks/mtrusted.svg" />
           <Text>Meesho Trusted</Text>
         </Card> */}
         {topPicksList.map((item, ind) => {
