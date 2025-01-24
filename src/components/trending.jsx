@@ -1,16 +1,11 @@
 import styled from "styled-components";
 import TitleText from "./title";
+import trendingList from "../utils/trending-list";
 const TrendingHeader = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
 `;
-// const TrendingTitle = styled.h2`
-//   font-size: 32px;
-//   font-weight: 700;
-//   line-height: 40px;
-//   color: var(--Grey-Base, #333);
-// `;
 const TrendingSubTitle = styled.h3`
   font-size: 20px;
   font-weight: 400;
@@ -59,24 +54,7 @@ const FlexRow = styled.div`
   justify-content: space-between;
   /* border: 1px solid red; */
 `;
-const trendingList = [
-  {
-    title: "Summer Collection",
-    imgUrl: "src/assets/trending-img.png",
-  },
-  {
-    title: "Festive Collection",
-    imgUrl: "src/assets/festive.png",
-  },
-  {
-    title: "Kitchen Ware",
-    imgUrl: "src/assets/kitchenware.png",
-  },
-  {
-    title: "Summer Collection",
-    imgUrl: "src/assets/trending-img.png",
-  },
-];
+
 export default function Trending() {
   return (
     <FlexContainer>

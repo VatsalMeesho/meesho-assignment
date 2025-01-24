@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useState } from "react";
+import bestsellerList from "../utils/bestseller-list";
 import TitleText from "./title";
 const Card = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ const FlexRow = styled.div`
   flex-direction: row;
   gap: 16px;
   justify-content: space-between;
-  /* overflow-x: scroll; */
+  overflow-x: scroll;
   /* border: 1px solid red; */
 `;
 const ItemTitle = styled.p`
@@ -42,63 +42,12 @@ const ItemPrice = styled.p`
   line-height: 20px; /* 125% */
 `;
 
-const bestsellerList = [
-  {
-    title: "Kurtis",
-    price: 0,
-    imgUrl: "src/assets/bestseller.png",
-  },
-  {
-    title: "Kurtis",
-    price: 1,
-    imgUrl: "src/assets/bestseller.png",
-  },
-  {
-    title: "Kurtis",
-    price: 2,
-    imgUrl: "src/assets/bestseller.png",
-  },
-  {
-    title: "Kurtis",
-    price: 3,
-    imgUrl: "src/assets/bestseller.png",
-  },
-  {
-    title: "Kurtis",
-    price: 4,
-    imgUrl: "src/assets/bestseller.png",
-  },
-  {
-    title: "Kurtis",
-    price: 5,
-    imgUrl: "src/assets/bestseller.png",
-  },
-  {
-    title: "Kurtis",
-    price: 6,
-    imgUrl: "src/assets/bestseller.png",
-  },
-  {
-    title: "Kurtis",
-    price: 7,
-    imgUrl: "src/assets/bestseller.png",
-  },
-  {
-    title: "Kurtis",
-    price: 8,
-    imgUrl: "src/assets/bestseller.png",
-  },
-];
 export default function BestSellers() {
-  const [index, setIndex] = useState(0);
-  const [viewList, setViewList] = useState(() =>
-    bestsellerList.length <= 6 ? bestsellerList : bestsellerList.slice(0, 6),
-  );
   return (
     <FlexContainer>
       <TitleText>Bestsellers</TitleText>
       <FlexRow>
-        {viewList.map((item, ind) => {
+        {bestsellerList.map((item, ind) => {
           return (
             <Card key={ind}>
               <img src={item.imgUrl} width="200px" height="240px"></img>

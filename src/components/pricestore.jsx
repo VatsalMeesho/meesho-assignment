@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import TitleText from "./title";
-
+import priceList from "../utils/price-list";
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -29,28 +29,6 @@ const FlexRow = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-const priceList = [
-  {
-    title: "Under $99",
-    imgUrl: "src/assets/pricestore/circle.svg",
-  },
-  {
-    title: "Under $199",
-    imgUrl: "src/assets/pricestore/circle.svg",
-  },
-  {
-    title: "Under $299",
-    imgUrl: "src/assets/pricestore/circle.svg",
-  },
-  {
-    title: "Under $399",
-    imgUrl: "src/assets/pricestore/circle.svg",
-  },
-  {
-    title: "Under $499",
-    imgUrl: "src/assets/pricestore/circle.svg",
-  },
-];
 export default function PriceStore() {
   return (
     <FlexContainer>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import TitleText from "./title";
+import productsList from "../utils/productsfy-list";
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -74,104 +75,7 @@ const Tag = styled.p`
   line-height: 16px;
   letter-spacing: 0.144px;
 `;
-const productsList = [
-  {
-    title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
-    currentPrice: "404",
-    priceBeforeDisc: "434",
-    discPercentage: "20",
-    isFirstOrder: true,
-    hasFreeDelivery: true,
-    rating: 4.4,
-    numRating: 534,
-    isMTrusted: true,
-  },
-  {
-    title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
-    currentPrice: "404",
-    priceBeforeDisc: "434",
-    discPercentage: "20",
-    isFirstOrder: false,
-    hasFreeDelivery: true,
-    rating: 4.4,
-    numRating: 534,
-    isMTrusted: true,
-  },
-  {
-    title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
-    currentPrice: "404",
-    priceBeforeDisc: "434",
-    discPercentage: "20",
-    isFirstOrder: true,
-    hasFreeDelivery: false,
-    rating: 4.4,
-    numRating: 534,
-    isMTrusted: true,
-  },
-  {
-    title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
-    currentPrice: "404",
-    priceBeforeDisc: "434",
-    discPercentage: "20",
-    isFirstOrder: true,
-    hasFreeDelivery: true,
-    rating: 4.4,
-    numRating: 534,
-    isMTrusted: true,
-  },
-  {
-    title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
-    currentPrice: "404",
-    priceBeforeDisc: "434",
-    discPercentage: "20",
-    isFirstOrder: true,
-    hasFreeDelivery: true,
-    rating: 4.4,
-    numRating: 534,
-    isMTrusted: true,
-  },
-  {
-    title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
-    currentPrice: "404",
-    priceBeforeDisc: "434",
-    discPercentage: "20",
-    isFirstOrder: true,
-    hasFreeDelivery: true,
-    rating: 4.4,
-    numRating: 534,
-    isMTrusted: true,
-  },
-  {
-    title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
-    currentPrice: "404",
-    priceBeforeDisc: "434",
-    discPercentage: "20",
-    isFirstOrder: true,
-    hasFreeDelivery: true,
-    rating: 4.4,
-    numRating: 534,
-    isMTrusted: true,
-  },
-  {
-    title: "Trendy Lalit Woven Design Cotton Saree",
-    imgUrl: "src/assets/productsfy/product-img.png",
-    currentPrice: "404",
-    priceBeforeDisc: "434",
-    discPercentage: "20",
-    isFirstOrder: true,
-    hasFreeDelivery: true,
-    rating: 4.4,
-    numRating: 534,
-    isMTrusted: true,
-  },
-];
+
 export default function ProductsFy() {
   return (
     <FlexContainer>
