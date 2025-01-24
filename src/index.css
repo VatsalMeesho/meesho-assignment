@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @font-face {
   font-family: "MierB-Book";
-  src: local("MierB-Book"), url("./assets/fonts/MierB-Book.ttf");
+  src: local("MierB-Book"), url("/assets/fonts/MierB-Book.ttf");
 }
 * {
   margin: 0;
