@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { useState } from "react";
 const HeaderContainer = styled.div`
   display: flex;
-
   padding-left: 56px;
   padding-right: 56px;
   justify-content: space-between;
+  background-color: white;
 `;
 
 const MeeshoLogo = styled.img`

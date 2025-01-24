@@ -7,7 +7,29 @@ const FlexContainer = styled.div`
   padding: 40px 56px;
   gap: 28px;
 `;
-
+const Rating = styled.div`
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 16px;
+  background: #038d63;
+`;
+const RatingContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+const Div = styled.div``;
+const RatingText = styled.p`
+  color: #fff;
+  text-align: center;
+  font-family: "Mier B02";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+`;
 const Card = styled.div`
   display: flex;
   flex-direction: column;
@@ -75,7 +97,15 @@ const Tag = styled.p`
   line-height: 16px;
   letter-spacing: 0.144px;
 `;
-
+const NumRatings = styled.p`
+  color: #999;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.144px;
+  margin-left: 4px;
+`;
 export default function ProductsFy() {
   return (
     <FlexContainer>
@@ -101,6 +131,14 @@ export default function ProductsFy() {
                   </FlexRowSub>
                 )}
                 {item.hasFreeDelivery && <Tag>Free Delivery</Tag>}
+                <RatingContainer>
+                  <Rating>
+                    <RatingText>4.4</RatingText>
+                    <img src="/assets/productsfy/rating.svg" />
+                  </Rating>
+
+                  <img src="/assets/productsfy/mtrusted.svg" />
+                </RatingContainer>
               </CardContent>
             </Card>
           );

@@ -103,12 +103,20 @@ const SmallDivider = styled.div`
   background: #dfdfdf;
   width: 100% !important;
 `;
+const HeadDiv = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+`;
 function App() {
   return (
     <RootDiv>
-      <Header />
-      <SmallDivider />
-      <NavBar />
+      <HeadDiv>
+        <Header />
+        <SmallDivider />
+        <NavBar />
+      </HeadDiv>
       <ImgContainer>
         <LandingImg src="/assets/landing-img.png" />
         <Title>
