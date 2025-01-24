@@ -2,7 +2,10 @@ import styled from "styled-components";
 import { useState } from "react";
 const HeaderContainer = styled.div`
   display: flex;
-  /* padding-left: 56px; */
+
+  padding-left: 56px;
+  padding-right: 56px;
+  justify-content: space-between;
 `;
 
 const MeeshoLogo = styled.img`
@@ -22,8 +25,7 @@ const SearchBox = styled.div`
   padding-bottom: 12px;
   padding-right: 60px;
   align-items: center;
-  border: 1px solid grey;
-  /* border: 1px solid; */
+  border: 1px solid;
 `;
 const SearchInput = styled.input`
   min-width: 296px;
@@ -35,7 +37,40 @@ const SearchInput = styled.input`
 const HeaderDiv = styled.div`
   display: flex;
   gap: 36px;
-  padding-left: 56px;
+  /* padding-left: 56px; */
+`;
+const FlexRow = styled.div`
+  display: flex;
+  align-items: strech;
+
+  gap: 50px;
+`;
+const IconContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+`;
+const AppDownload = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+`;
+const Supplier = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const Text = styled.p`
+  color: #333;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.024px;
+  white-space: nowrap;
 `;
 export default function Header() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -56,6 +91,23 @@ export default function Header() {
           />
         </SearchBox>
       </HeaderDiv>
+      <FlexRow>
+        <AppDownload>
+          <img src="src/assets/header/download-app.svg" />
+          <Text>Download App</Text>
+        </AppDownload>
+        <Supplier>
+          <Text>Become a Supplier</Text>
+        </Supplier>
+        <IconContainer>
+          <img src="src/assets/header/profile.svg" width="24px" height="24px" />
+          <Text>Profile</Text>
+        </IconContainer>
+        <IconContainer>
+          <img src="src/assets/header/cart.svg" width="24px" height="24px" />
+          <Text>Cart</Text>
+        </IconContainer>
+      </FlexRow>
     </HeaderContainer>
   );
 }

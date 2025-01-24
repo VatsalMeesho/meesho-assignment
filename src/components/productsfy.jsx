@@ -53,6 +53,7 @@ const FlexRow = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   gap: 16px;
+  justify-content: space-between;
 `;
 const FlexRowSub = styled.div`
   display: flex;

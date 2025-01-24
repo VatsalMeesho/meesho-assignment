@@ -23,7 +23,7 @@ const FlexRow = styled.div`
   gap: 16px;
   justify-content: space-between;
   /* overflow-x: scroll; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
 `;
 const ItemTitle = styled.p`
   color: #999;

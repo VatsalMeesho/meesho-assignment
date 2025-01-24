@@ -32,6 +32,10 @@ const Text = styled.p`
   line-height: 24px;
   letter-spacing: ${(props) => (props.$normal ? "normal" : "0.018px")};
 `;
+const FlexCTA = styled.div`
+  display: flex;
+  gap: 16px;
+`;
 export default function Footer() {
   return (
     <FlexContainer>
@@ -41,6 +45,10 @@ export default function Footer() {
           Trusted by more than 1 Crore Indians <br />
           Cash on Delivery | Free Delivery
         </Text>
+        <FlexCTA>
+          <img src="src/assets/footer/playstore.svg" />
+          <img src="src/assets/footer/appstore.svg" />
+        </FlexCTA>
       </FlexColumn>
       <FlexColumn>
         <Text>Careers</Text>
