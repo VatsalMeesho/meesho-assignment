@@ -12,10 +12,12 @@ const NavContainer = styled.div`
   justify-content: space-between;
 `;
 const PTag = styled.p`
+  border-bottom: 3px solid transparent;
+  transition: border-bottom-color 0.1s;
+
   &:hover {
-    border-bottom: 3px solid rgb(159, 32, 137);
+    border-bottom-color: rgb(159, 32, 137);
   }
-  transition: border-bottom 0.1s;
 `;
 export default function NavBar() {
   return (

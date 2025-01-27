@@ -116,6 +116,7 @@ function App() {
         <Header />
         <SmallDivider />
         <NavBar />
+        <SmallDivider />
       </HeadDiv>
       <ImgContainer>
         <LandingImg src="/assets/landing-img.png" />

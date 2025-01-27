@@ -20,7 +20,6 @@ const RatingContainer = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-const Div = styled.div``;
 const RatingText = styled.p`
   color: #fff;
   text-align: center;
