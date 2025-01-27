@@ -8,6 +8,7 @@ import Toppicks from "./components/toppicks";
 import ProductsFy from "./components/productsfy";
 import PriceStore from "./components/pricestore";
 import Footer from "./components/footer";
+import { useState, useEffect, useRef } from "react";
 const RootDiv = styled.div`
   /* max-width: 1440px; */
   display: flex;
@@ -109,13 +110,21 @@ const HeadDiv = styled.div`
   z-index: 1;
   background-color: white;
 `;
+
 function App() {
+  const [height, setHeight] = useState(0);
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    setHeight(elementRef.current.clientHeight);
+  }, []);
+
   return (
     <RootDiv>
-      <HeadDiv>
+      <HeadDiv ref={elementRef}>
         <Header />
         <SmallDivider />
-        <NavBar />
+        <NavBar height={height} />
         <SmallDivider />
       </HeadDiv>
       <ImgContainer>
