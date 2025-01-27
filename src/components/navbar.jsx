@@ -5,17 +5,17 @@ const NavContainer = styled.div`
   display: flex;
   padding: 16px 100px 14px 56px;
   flex-direction: row;
-  gap: 40px;
+  /* gap: 40px; */
   width: 100%;
   justify-content: space-between;
 `;
 
 const DropDownText = styled.p`
-  color: #333;
+  color: ${(props) => (props.title ? "#982089" : "#333")};
   text-align: center;
-  font-size: 16px;
+  font-size: ${(props) => (props.title ? "18px" : "16px")};
   font-style: normal;
-  font-weight: 500;
+  font-weight: ${(props) => (props.title ? "700" : "400")};
   line-height: 20px;
   letter-spacing: 0.024px;
 `;
@@ -50,15 +50,18 @@ const DropDownItemColumn = styled.div`
     color: rgb(159, 32, 137);
   } */
 `;
+
 const PTag = styled.p`
   border-bottom: 3px solid transparent;
   transition: border-bottom-color 0.1s;
-
+  flex-grow: 1;
+  padding-right: 40px;
   &:hover {
     border-bottom-color: rgb(159, 32, 137);
     font-weight: 600;
   }
 `;
+
 export default function NavBar({ height }) {
   const [show, setShow] = useState(false);
   const [index, setIndex] = useState(-1);
@@ -89,7 +92,11 @@ export default function NavBar({ height }) {
                 bgColor={index % 2 ? "#F8F8FF" : "#fff"}
               >
                 {item.map((i, k) => {
-                  return <DropDownText key={k}>{i}</DropDownText>;
+                  return (
+                    <DropDownText key={k} title={k === 0}>
+                      {i}
+                    </DropDownText>
+                  );
                 })}
               </DropDownItemColumn>
             );
