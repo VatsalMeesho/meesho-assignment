@@ -51,33 +51,27 @@ const DropDownItemColumn = styled.div`
   } */
 `;
 
-// const PTag = styled.p`
-//   border-bottom: 3px solid transparent;
-//   transition: border-bottom-color 0.1s;
-//   flex-grow: 1;
-//   padding-right: 40px;
-//   &:hover {
-//     border-bottom-color: rgb(159, 32, 137);
-//     font-weight: 600;
-//   }
-// `;
 const PTag = styled.p`
-  border-bottom: 3px solid transparent;
+  /* border-bottom: 3px solid transparent;
   transition: border-bottom-color 0.1s;
+  flex-grow: 1;
   padding-right: 40px;
   &:hover {
+    border-bottom-color: rgb(159, 32, 137);
     font-weight: 600;
-    span {
-      border-bottom-color: rgb(159, 32, 137);
-    }
-  }
+  } */
+  flex-grow: 1;
+  padding-right: 40px;
   span {
-    display: inline-block;
     border-bottom: 3px solid transparent;
     transition: border-bottom-color 0.1s;
-    /* outline: 1px solid; */
+    &:hover {
+      border-bottom-color: rgb(159, 32, 137);
+      font-weight: 600;
+    }
   }
 `;
+
 export default function NavBar({ height }) {
   const [show, setShow] = useState(false);
   const [index, setIndex] = useState(-1);
