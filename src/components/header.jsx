@@ -23,17 +23,19 @@ const SearchBox = styled.div`
   margin-bottom: 14px;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-right: ${(props) => (props.$searchQuery.length > 0 ? "8px" : "60px")};
+  /* padding-right: ${(props) => (props.$searchQuery.length > 0 ? "0px" : "60px")}; */
+  /* padding-right: 60px; */
   align-items: center;
   border: 1px solid;
 `;
 const SearchInput = styled.input`
-  min-width: 296px;
+  min-width: 320px;
   width: 100%;
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
   /* padding-top: 11px; */
+  padding-right: 8px;
   border: none;
   position: relative;
   top: 3px;
@@ -101,8 +103,10 @@ export default function Header() {
             placeholder="Try Saree,Kurti or Search by Product Code"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
+            name="searchquery"
+            type="search"
           />
-          {searchQuery.length > 0 && (
+          {/* {searchQuery.length > 0 && (
             <svg
               width="15"
               height="15"
@@ -118,7 +122,7 @@ export default function Header() {
                 clipRule="evenodd"
               ></path>
             </svg>
-          )}
+          )} */}
         </SearchBox>
       </HeaderDiv>
       <FlexRow>
