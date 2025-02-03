@@ -122,7 +122,7 @@ function App() {
         <SmallDivider />
       </HeadDiv>
       <ImgContainer>
-        <LandingImg src="/assets/landing-img.png" />
+        <LandingImg src="/assets/landing-img.png" alt="Landing-Cover-Image" />
         <Title>
           <TitleText>30% off</TitleText>
           <SubText>on your first order</SubText>

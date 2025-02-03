@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
-const HeaderContainer = styled.div`
+const HeaderContainer = styled.header`
   display: flex;
   padding-left: 56px;
   padding-right: 56px;
@@ -32,7 +32,6 @@ const SearchInput = styled.input`
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
-  /* padding-top: 11px; */
   padding-right: 8px;
   border: none;
   position: relative;
@@ -49,7 +48,6 @@ const SearchInput = styled.input`
 const HeaderDiv = styled.div`
   display: flex;
   gap: 36px;
-  /* padding-left: 56px; */
 `;
 const FlexRow = styled.div`
   display: flex;
@@ -80,7 +78,7 @@ const Text = styled.p`
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px; /* 125% */
+  line-height: 20px;
   letter-spacing: 0.024px;
   white-space: nowrap;
 `;
@@ -89,7 +87,7 @@ export default function Header() {
   return (
     <HeaderContainer>
       <HeaderDiv>
-        <MeeshoLogo src="/assets/header/meeshoLogo.svg" />
+        <MeeshoLogo src="/assets/header/meeshoLogo.svg" alt="Meesho-Logo" />
         <SearchBox $searchQuery={searchQuery}>
           <img
             src="/assets/header/search-icon.svg"
@@ -108,18 +106,18 @@ export default function Header() {
       </HeaderDiv>
       <FlexRow>
         <AppDownload>
-          <img src="/assets/header/download-app.svg" />
+          <img src="/assets/header/download-app.svg" alt="Meesho-App" />
           <Text>Download App</Text>
         </AppDownload>
         <Supplier>
           <Text>Become a Supplier</Text>
         </Supplier>
         <IconContainer>
-          <img src="/assets/header/profile.svg" width="21px" height="22px" />
+          <img src="/assets/header/profile.svg" width="21px" height="22px" alt="Profile-Icon" />
           <Text>Profile</Text>
         </IconContainer>
         <IconContainer>
-          <img src="/assets/header/cart.svg" width="22px" height="20px" />
+          <img src="/assets/header/cart.svg" width="22px" height="20px" alt="Cart-Icon"/>
           <Text>Cart</Text>
         </IconContainer>
       </FlexRow>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-const FlexContainer = styled.div`
+const FlexContainer = styled.footer`
   display: flex;
   padding: 60px 56px 60px;
   background: #f9f9f9;

@@ -2,6 +2,7 @@ const productsList = [
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
     imgUrl: "/assets/productsfy/product-img.png",
+    altText : "Woven Cotton Saree - IMG",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",
@@ -14,6 +15,7 @@ const productsList = [
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
     imgUrl: "/assets/productsfy/product-img.png",
+    altText : "Woven Cotton Saree - IMG",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",
@@ -26,6 +28,7 @@ const productsList = [
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
     imgUrl: "/assets/productsfy/product-img.png",
+    altText : "Woven Cotton Saree - IMG",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",
@@ -38,6 +41,7 @@ const productsList = [
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
     imgUrl: "/assets/productsfy/product-img.png",
+    altText : "Woven Cotton Saree - IMG",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",
@@ -50,6 +54,7 @@ const productsList = [
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
     imgUrl: "/assets/productsfy/product-img.png",
+    altText : "Woven Cotton Saree - IMG",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",
@@ -62,6 +67,7 @@ const productsList = [
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
     imgUrl: "/assets/productsfy/product-img.png",
+    altText : "Woven Cotton Saree - IMG",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",
@@ -74,6 +80,7 @@ const productsList = [
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
     imgUrl: "/assets/productsfy/product-img.png",
+    altText : "Woven Cotton Saree - IMG",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",
@@ -86,6 +93,7 @@ const productsList = [
   {
     title: "Trendy Lalit Woven Design Cotton Saree",
     imgUrl: "/assets/productsfy/product-img.png",
+    altText : "Woven Cotton Saree - IMG",
     currentPrice: "404",
     priceBeforeDisc: "434",
     discPercentage: "20",

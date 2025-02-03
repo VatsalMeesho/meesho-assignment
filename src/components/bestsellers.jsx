@@ -47,7 +47,7 @@ export default function BestSellers() {
         {bestsellerList.map((item, ind) => {
           return (
             <Card key={ind}>
-              <img src={item.imgUrl} width="200px" height="240px"></img>
+              <img src={item.imgUrl} width="200px" height="240px" alt={item.altText}></img>
               <ItemTitle>{item.title}</ItemTitle>
               <ItemPrice>From ${item.price}</ItemPrice>
             </Card>

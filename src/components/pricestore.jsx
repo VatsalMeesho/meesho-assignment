@@ -36,7 +36,7 @@ export default function PriceStore() {
           return (
             <Card key={ind}>
               <div>
-                <img src={item.imgUrl} />
+                <img src={item.imgUrl} alt={item.altText}/>
               </div>
               <CardText>{item.title}</CardText>
             </Card>

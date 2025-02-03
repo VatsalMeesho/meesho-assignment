@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import navTitles from "../utils/navTitles";
 import { useState } from "react";
-const NavContainer = styled.div`
+const NavContainer = styled.nav`
   display: flex;
   padding: 16px 100px 14px 56px;
   flex-direction: row;

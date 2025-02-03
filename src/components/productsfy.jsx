@@ -113,7 +113,7 @@ export default function ProductsFy() {
         {productsList.map((item, ind) => {
           return (
             <Card key={ind}>
-              <img src={item.imgUrl} />
+              <img src={item.imgUrl} alt={item.altText} />
               <CardContent>
                 <Text>{item.title}</Text>
                 <FlexRowSub>
@@ -125,7 +125,7 @@ export default function ProductsFy() {
                 </FlexRowSub>
                 {item.isFirstOrder && (
                   <FlexRowSub $lessgap>
-                    <img src="/assets/productsfy/disc.svg" />
+                    <img src="/assets/productsfy/disc.svg" alt="Discount"/>
                     <Text $firstdisc>₹100 discount on 1st order</Text>
                   </FlexRowSub>
                 )}
@@ -133,10 +133,10 @@ export default function ProductsFy() {
                 <RatingContainer>
                   <Rating>
                     <RatingText>4.4</RatingText>
-                    <img src="/assets/productsfy/rating.svg" />
+                    <img src="/assets/productsfy/rating.svg" alt="Rating-Star-IMG"/>
                   </Rating>
 
-                  <img src="/assets/productsfy/mtrusted.svg" />
+                  <img src="/assets/productsfy/mtrusted.svg" alt="Mtrusted" />
                 </RatingContainer>
               </CardContent>
             </Card>

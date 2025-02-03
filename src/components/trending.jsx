@@ -21,7 +21,6 @@ const FlexContainer = styled.div`
   flex-direction: column;
   gap: 20px;
   padding: 40px 56px 60px 56px;
-  /* border: 1px solid red; */
 `;
 
 const Card = styled.div`
@@ -52,7 +51,6 @@ const FlexRow = styled.div`
   display: flex;
   gap: 16px;
   justify-content: space-between;
-  /* border: 1px solid red; */
 `;
 
 export default function Trending() {
@@ -62,13 +60,10 @@ export default function Trending() {
         <TitleText>Trending Now</TitleText>
         <TrendingSubTitle>Best Deals On Products</TrendingSubTitle>
       </TrendingHeader>
-      {/* <Card bgimage="/assets/trending-img.png">
-        <CardText>Summer Collection</CardText>
-      </Card> */}
       <FlexRow>
         {trendingList.map((trend, ind) => {
           return (
-            <Card $bgimage={trend.imgUrl} key={ind}>
+            <Card $bgimage={trend.imgUrl} key={ind} alt={trend.altText}>
               <CardText>{trend.title}</CardText>
             </Card>
           );
