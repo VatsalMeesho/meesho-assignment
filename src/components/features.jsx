@@ -7,8 +7,6 @@ const FeatureTag = styled.div`
 const FeatureContainer = styled.div`
   display: flex;
   gap: 48px;
-  /* margin: 20px auto; */
-
   width: fit-content;
 `;
 const Container = styled.div`
@@ -36,18 +34,6 @@ export default function Features() {
   return (
     <Container>
       <FeatureContainer>
-        {/* <FeatureTag>
-          <img src="/assets/lowest-prices.svg" width="48px" height="48px" />
-          <p>Lowest Prices</p>
-        </FeatureTag>
-        <FeatureTag>
-          <img src="/assets/lowest-prices.svg" width="48px" height="48px" />
-          <p>Lowest Prices</p>
-        </FeatureTag>
-        <FeatureTag>
-          <img src="/assets/lowest-prices.svg" width="48px" height="48px" />
-          <p>Lowest Prices</p>
-        </FeatureTag> */}
         {featureList.map((feature, ind) => {
           return (
             <FeatureTag key={ind}>

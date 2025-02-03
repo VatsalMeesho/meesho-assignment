@@ -1,7 +1,6 @@
 import styled from "styled-components";
 const FlexContainer = styled.div`
   display: flex;
-  /* border: 1px solid red; */
   padding: 60px 56px 60px;
   background: #f9f9f9;
   justify-content: center;
@@ -12,7 +11,6 @@ const FlexColumn = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* border: 1px solid red; */
 `;
 const MainText = styled.h3`
   color: #333;

@@ -11,7 +11,6 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
-  /* border: 1px solid red; */
 `;
 const CardText = styled.div`
   width: 100%;
@@ -22,7 +21,6 @@ const CardText = styled.div`
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.018px;
-  /* border: 1px solid; */
 `;
 
 const FlexRow = styled.div`

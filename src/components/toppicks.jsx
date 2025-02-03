@@ -18,7 +18,6 @@ const Card = styled.div`
   flex: 1;
 `;
 const SubText = styled.h2`
-  /* color: #f43397; */
   color: ${(props) => props.$textColor || "#f43397"};
   text-align: center;
   font-size: 20px;
@@ -56,18 +55,6 @@ export default function Toppicks() {
     <FlexContainer>
       <TitleText>Top Picks</TitleText>
       <FlexRow>
-        {/* <Card>
-          <img src="/assets/toppicks/mtrusted.svg" />
-          <Text>Meesho Trusted</Text>
-        </Card>
-        <Card>
-          <img src="/assets/toppicks/mtrusted.svg" />
-          <Text>Meesho Trusted</Text>
-        </Card>
-        <Card>
-          <img src="/assets/toppicks/mtrusted.svg" />
-          <Text>Meesho Trusted</Text>
-        </Card> */}
         {topPicksList.map((item, ind) => {
           return (
             <Card key={ind} $bgColor={item.bgColor}>

@@ -5,7 +5,6 @@ const NavContainer = styled.div`
   display: flex;
   padding: 16px 100px 14px 56px;
   flex-direction: row;
-  /* gap: 40px; */
   width: 100%;
   justify-content: space-between;
 `;
@@ -24,7 +23,6 @@ const DropDownContainer = styled.div`
   top: ${(props) => `${props.top}px`};
   left: 0;
   width: 100vw;
-  /* height: 200px; */
   background-color: #fff;
   z-index: 100;
   visibility: ${(props) =>
@@ -33,7 +31,6 @@ const DropDownContainer = styled.div`
   justify-content: center;
   align-items: stretch;
   transition: visibility 0.1s;
-  /* border: 1px solid #f0f0f0; */
 `;
 const DropDownItemColumn = styled.div`
   display: flex;
@@ -45,21 +42,9 @@ const DropDownItemColumn = styled.div`
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: ${(props) => props.bgColor};
-  /* &:first-child {
-    font-weight: 600;
-    color: rgb(159, 32, 137);
-  } */
 `;
 
 const PTag = styled.p`
-  /* border-bottom: 3px solid transparent;
-  transition: border-bottom-color 0.1s;
-  flex-grow: 1;
-  padding-right: 40px;
-  &:hover {
-    border-bottom-color: rgb(159, 32, 137);
-    font-weight: 600;
-  } */
   flex-grow: 1;
   padding-right: 40px;
   span {
@@ -112,7 +97,6 @@ export default function NavBar({ height }) {
             );
           })}
       </DropDownContainer>
-      {/* <button onClick={() => setShow(!show)}>Click me</button> */}
     </NavContainer>
   );
 }

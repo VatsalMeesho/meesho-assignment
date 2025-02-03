@@ -10,17 +10,11 @@ import PriceStore from "./components/pricestore";
 import Footer from "./components/footer";
 import { useState, useEffect, useRef } from "react";
 const RootDiv = styled.div`
-  /* max-width: 1440px; */
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  /* padding-left: 56px; */
-  /* border: 1px solid grey; */
 `;
 const TitleText = styled.h2`
-  /* position: absolute;
-  right: 237px;
-  bottom: 194px; */
   color: #fff;
   text-align: center;
   font-feature-settings:
@@ -29,7 +23,7 @@ const TitleText = styled.h2`
   font-size: 120px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120px; /* 100% */
+  line-height: 120px;
   letter-spacing: -4.2px;
 `;
 const SubText = styled.h3`
@@ -41,7 +35,7 @@ const SubText = styled.h3`
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
-  line-height: 36px; /* 112.5% */
+  line-height: 36px; 
   letter-spacing: -0.64px;
 `;
 const Title = styled.div`
@@ -92,7 +86,7 @@ const SubText2 = styled.p`
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 116.667% */
+  line-height: 28px;
   letter-spacing: -0.48px;
 `;
 const ImgContainer = styled.div`
