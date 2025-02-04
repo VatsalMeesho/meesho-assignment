@@ -1,4 +1,4 @@
-import { FeatureTag, FeatureContainer, Container } from "../styles/features";
+import { FeatureTag, FeatureContainer, Container } from "../styles/features.styled";
 const featureList = [
   {
     title: "Lowest Prices",

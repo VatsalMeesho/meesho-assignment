@@ -1,6 +1,6 @@
 import TitleText from "./title";
 import priceList from "../utils/price-list";
-import { Card, FlexContainer, FlexRow, CardText } from "../styles/pricestore";
+import { Card, FlexContainer, FlexRow, CardText } from "../styles/pricestore.styled";
 export default function PriceStore() {
   return (
     <FlexContainer>

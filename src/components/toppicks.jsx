@@ -1,5 +1,5 @@
 import TitleText from "./title";
-import { FlexContainer, Card, SubText, FlexRow } from "../styles/toppicks";
+import { FlexContainer, Card, SubText, FlexRow } from "../styles/toppicks.styled";
 const topPicksList = [
   {
     title: "Meesho Trusted",

@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import {Text,Supplier,AppDownload,IconContainer,FlexRow,HeaderDiv,SearchInput,SearchBox,MeeshoLogo,HeaderContainer} from "../styles/header";
+import {Text,Supplier,AppDownload,IconContainer,FlexRow,HeaderDiv,SearchInput,SearchBox,MeeshoLogo,HeaderContainer} from "../styles/header.styled";
 export default function Header() {
   const [searchQuery, setSearchQuery] = useState("");
   return (

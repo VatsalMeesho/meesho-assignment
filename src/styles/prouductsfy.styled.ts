@@ -32,7 +32,6 @@ const Card = styled.div`
   flex-direction: column;
   gap: 0;
   width: 320px;
-  /* border: 1px solid; */
   border-radius: 8px;
   border: 1px solid #f0f0f0;
 `;
@@ -103,4 +102,18 @@ const NumRatings = styled.p`
   letter-spacing: 0.144px;
   margin-left: 4px;
 `;
-export {NumRatings, Tag, FlexRowSub, FlexRow, Text, PriceText, CardContent, Card, RatingContainer, RatingText, Rating, FlexContainer};
+const RatingFlex = styled.div`
+  display : flex;
+  gap: 8px;
+  align-items : center;
+`
+const RatingText2 = styled.p`
+  color:  #999;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 16px;
+letter-spacing: 0.144px;
+
+`
+export {NumRatings, Tag, FlexRowSub, FlexRow, Text, PriceText, CardContent, Card, RatingContainer, RatingText, Rating, FlexContainer, RatingFlex, RatingText2};

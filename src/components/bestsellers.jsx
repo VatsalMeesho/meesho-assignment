@@ -1,6 +1,6 @@
 import bestsellerList from "../utils/bestseller-list";
 import TitleText from "./title";
-import { Card, FlexContainer, FlexRow, ItemTitle, ItemPrice } from "../styles/bestsellers";
+import { Card, FlexContainer, FlexRow, ItemTitle, ItemPrice } from "../styles/bestsellers.styled";
 
 export default function BestSellers() {
   return (

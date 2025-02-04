@@ -1,5 +1,5 @@
 import TitleText from "./title";
-import { TrendingHeader, TrendingSubTitle, FlexContainer, Card, CardText, FlexRow } from "../styles/trending";
+import { TrendingHeader, TrendingSubTitle, FlexContainer, Card, CardText, FlexRow } from "../styles/trending.styled";
 import trendingList from "../utils/trending-list";
 
 export default function Trending() {

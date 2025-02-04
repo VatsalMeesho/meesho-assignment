@@ -1,6 +1,6 @@
 import TitleText from "./title";
 import productsList from "../utils/productsfy-list";
-import { Tag, FlexRowSub, FlexRow, Text, PriceText, CardContent, Card, RatingContainer, RatingText, Rating, FlexContainer} from "../styles/prouductsfy";
+import { Tag, FlexRowSub, FlexRow, Text, PriceText, CardContent, Card, RatingContainer, RatingText, Rating, FlexContainer, RatingFlex, RatingText2} from "../styles/prouductsfy.styled";
 export default function ProductsFy() {
   return (
     <FlexContainer>
@@ -27,11 +27,13 @@ export default function ProductsFy() {
                 )}
                 {item.hasFreeDelivery && <Tag>Free Delivery</Tag>}
                 <RatingContainer>
+                  <RatingFlex>
                   <Rating>
                     <RatingText>4.4</RatingText>
                     <img src="/assets/productsfy/rating.svg" alt="Rating-Star-IMG"/>
                   </Rating>
-
+                  <RatingText2>{item.numRating} Ratings</RatingText2>
+                  </RatingFlex>
                   <img src="/assets/productsfy/mtrusted.svg" alt="Mtrusted" />
                 </RatingContainer>
               </CardContent>

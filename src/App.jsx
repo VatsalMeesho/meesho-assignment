@@ -8,7 +8,7 @@ import ProductsFy from "./components/productsfy";
 import PriceStore from "./components/pricestore";
 import Footer from "./components/footer";
 import { useState, useEffect, useRef } from "react";
-import { RootDiv, HeadDiv, ImgContainer, LandingImg, Title, TitleText, SubText, SubText2, ShopBtn, BtnText, Divider, SmallDivider } from "./styles/app";
+import { RootDiv, HeadDiv, ImgContainer, LandingImg, Title, TitleText, SubText, SubText2, ShopBtn, BtnText, Divider, SmallDivider } from "./styles/app.styled"
 
 function App() {
   const [height, setHeight] = useState(0);

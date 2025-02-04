@@ -1,7 +1,7 @@
 
 import navTitles from "../utils/navTitles";
 import { useState } from "react";
-import { NavContainer,DropDownText, DropDownContainer, DropDownItemColumn, PTag  } from "../styles/navbar";
+import { NavContainer,DropDownText, DropDownContainer, DropDownItemColumn, PTag  } from "../styles/navbar.styled";
 
 export default function NavBar({ height }) {
   const [show, setShow] = useState(false);

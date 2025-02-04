@@ -1,4 +1,4 @@
-import { FlexContainer, FlexColumn, MainText, Text, FlexCTA, IconContainer } from "../styles/footer";
+import { FlexContainer, FlexColumn, MainText, Text, FlexCTA, IconContainer } from "../styles/footer.styled";
 export default function Footer() {
   return (
     <FlexContainer>
