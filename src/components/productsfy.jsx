@@ -1,4 +1,4 @@
-import TitleText from "./title";
+import { TitleText } from "../styles/commons.styled";
 import productsList from "../utils/productsfy-list";
 import { Tag, FlexRowSub, FlexRow, Text, PriceText, CardContent, Card, RatingContainer, RatingText, Rating, FlexContainer, RatingFlex, RatingText2} from "../styles/prouductsfy.styled";
 export default function ProductsFy() {

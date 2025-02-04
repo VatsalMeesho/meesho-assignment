@@ -1,4 +1,5 @@
 import { FeatureTag, FeatureContainer, Container } from "../styles/features.styled";
+import { SubText } from "../styles/commons.styled";
 const featureList = [
   {
     title: "Lowest Prices",
@@ -21,7 +22,7 @@ export default function Features() {
           return (
             <FeatureTag key={ind}>
               <img src={feature.imgUrl} width="48px" height="48px" />
-              <p>{feature.title}</p>
+              <SubText>{feature.title}</SubText>
             </FeatureTag>
           );
         })}

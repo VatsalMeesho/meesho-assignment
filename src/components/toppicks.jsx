@@ -1,4 +1,4 @@
-import TitleText from "./title";
+import { TitleText } from "../styles/commons.styled";
 import { FlexContainer, Card, SubText, FlexRow } from "../styles/toppicks.styled";
 const topPicksList = [
   {

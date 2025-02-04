@@ -1,4 +1,4 @@
-import TitleText from "./title";
+import { TitleText } from "../styles/commons.styled";
 import priceList from "../utils/price-list";
 import { Card, FlexContainer, FlexRow, CardText } from "../styles/pricestore.styled";
 export default function PriceStore() {

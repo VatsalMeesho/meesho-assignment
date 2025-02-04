@@ -1,6 +1,7 @@
 
 import { useState } from "react";
-import {Text,Supplier,AppDownload,IconContainer,FlexRow,HeaderDiv,SearchInput,SearchBox,MeeshoLogo,HeaderContainer} from "../styles/header.styled";
+import { SubText } from "../styles/commons.styled";
+import {Supplier,AppDownload,IconContainer,FlexRow,HeaderDiv,SearchInput,SearchBox,MeeshoLogo,HeaderContainer} from "../styles/header.styled";
 export default function Header() {
   const [searchQuery, setSearchQuery] = useState("");
   return (
@@ -26,18 +27,18 @@ export default function Header() {
       <FlexRow>
         <AppDownload>
           <img src="/assets/header/download-app.svg" alt="Meesho-App" />
-          <Text>Download App</Text>
+          <SubText>Download App</SubText>
         </AppDownload>
         <Supplier>
-          <Text>Become a Supplier</Text>
+          <SubText>Become a Supplier</SubText>
         </Supplier>
         <IconContainer>
           <img src="/assets/header/profile.svg" width="21px" height="22px" alt="Profile-Icon" />
-          <Text>Profile</Text>
+          <SubText>Profile</SubText>
         </IconContainer>
         <IconContainer>
           <img src="/assets/header/cart.svg" width="22px" height="20px" alt="Cart-Icon"/>
-          <Text>Cart</Text>
+          <SubText>Cart</SubText>
         </IconContainer>
       </FlexRow>
     </HeaderContainer>

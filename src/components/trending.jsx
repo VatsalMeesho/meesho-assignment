@@ -1,4 +1,4 @@
-import TitleText from "./title";
+import { TitleText } from "../styles/commons.styled";
 import { TrendingHeader, TrendingSubTitle, FlexContainer, Card, CardText, FlexRow } from "../styles/trending.styled";
 import trendingList from "../utils/trending-list";
 
