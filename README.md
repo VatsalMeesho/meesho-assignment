@@ -1,8 +1,20 @@
-# React + Vite
+# React + Vite Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Meesho Web intern assignment - created meesho web home page
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Styled Components
+- Typescript
+
+All the components are available in /src/components and the styled components created for each component can be found in /src/styles directory. The dummy data shown on the page can be found /src/utils.
+
+To run locally clone the repo and run the following commands :
+```bash
+  npm install
+  npm run dev
+```
+    
+
+
