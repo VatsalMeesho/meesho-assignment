@@ -1,34 +1,6 @@
-import styled from "styled-components";
-import TitleText from "./title";
+import { TitleText } from "../styles/commons.styled";
 import priceList from "../utils/price-list";
-const FlexContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 40px 56px 76px;
-  gap: 40px;
-`;
-const Card = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  /* border: 1px solid red; */
-`;
-const CardText = styled.div`
-  width: 100%;
-  text-align: center;
-  color: #333;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0.018px;
-  /* border: 1px solid; */
-`;
-
-const FlexRow = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
+import { Card, FlexContainer, FlexRow, CardText } from "../styles/pricestore.styled";
 export default function PriceStore() {
   return (
     <FlexContainer>
@@ -38,7 +10,7 @@ export default function PriceStore() {
           return (
             <Card key={ind}>
               <div>
-                <img src={item.imgUrl} />
+                <img src={item.imgUrl} alt={item.altText}/>
               </div>
               <CardText>{item.title}</CardText>
             </Card>

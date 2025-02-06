@@ -1,23 +1,5 @@
-import styled from "styled-components";
-const FeatureTag = styled.div`
-  display: flex;
-  gap: 8px;
-  align-items: center;
-`;
-const FeatureContainer = styled.div`
-  display: flex;
-  gap: 48px;
-  /* margin: 20px auto; */
-
-  width: fit-content;
-`;
-const Container = styled.div`
-  display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  justify-content: center;
-  background: var(--Blue-T2, #e7eeff);
-`;
+import { FeatureTag, FeatureContainer, Container } from "../styles/features.styled";
+import { SubText } from "../styles/commons.styled";
 const featureList = [
   {
     title: "Lowest Prices",
@@ -36,23 +18,11 @@ export default function Features() {
   return (
     <Container>
       <FeatureContainer>
-        {/* <FeatureTag>
-          <img src="/assets/lowest-prices.svg" width="48px" height="48px" />
-          <p>Lowest Prices</p>
-        </FeatureTag>
-        <FeatureTag>
-          <img src="/assets/lowest-prices.svg" width="48px" height="48px" />
-          <p>Lowest Prices</p>
-        </FeatureTag>
-        <FeatureTag>
-          <img src="/assets/lowest-prices.svg" width="48px" height="48px" />
-          <p>Lowest Prices</p>
-        </FeatureTag> */}
         {featureList.map((feature, ind) => {
           return (
             <FeatureTag key={ind}>
               <img src={feature.imgUrl} width="48px" height="48px" />
-              <p>{feature.title}</p>
+              <SubText>{feature.title}</SubText>
             </FeatureTag>
           );
         })}
